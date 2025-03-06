@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Monitoring App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Network Monitoring Dashboard</h1>
+
+        <div class="status">
+            <h2>Connectivity Status</h2>
+            <p id="connection-status">Checking...</p>
+        </div>
+
+        <div class="ping">
+            <h2>Ping Test</h2>
+            <button onclick="runPingTest()">Run Ping</button>
+            <p id="ping-result">Not tested</p>
+        </div>
+
+        <div class="speed">
+            <h2>Speed Test</h2>
+            <button onclick="runSpeedTest()">Run Speed Test</button>
+            <p id="speed-result">Not tested</p>
+        </div>
+
+        <div class="ip-info">
+            <h2>Your IP & ISP Info</h2>
+            <p id="ip-info">Fetching...</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>🚀 Want advanced network monitoring? A backend is needed for real-time **packet sniffing, bandwidth tracking, and detailed router statistics**.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
